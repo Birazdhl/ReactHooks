@@ -3,7 +3,7 @@ import { CountContext } from '../../App'
 
 export default function ComponentF() {
 
-    const contextValue = useContext(CountContext)
+    const contextValue = useContext(CountContext) 
 
     return (
         <div>

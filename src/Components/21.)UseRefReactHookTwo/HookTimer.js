@@ -8,7 +8,7 @@ function HookTimer() {
     const intervalRef = useRef()
 
     useEffect(() => {
-         intervalRef.current = setInterval(() => {
+         intervalRef.current = setInterval(() => { //intervalRef.current ,, it can be used to clear interval from outside useEffect
             setTimer(prevTimer => prevTimer+1)
         }, 1000);
        

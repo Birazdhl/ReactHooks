@@ -9,6 +9,7 @@ export default function IntervalHook() {
     }
 
     useEffect( () => {
+
         const Interval = setInterval(tick,2000)
 
         return() => {

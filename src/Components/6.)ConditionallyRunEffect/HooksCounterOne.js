@@ -9,7 +9,7 @@ function HooksCounterOne() {
     useEffect(() => {
         console.log('Updating document title')
         document.title =  `Clicked ${count} times`     
-    }, [count])
+    }, [count])  //second parameter determine only the value to be re-render
 
     return (
         <div>

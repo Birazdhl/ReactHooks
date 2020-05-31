@@ -4,7 +4,7 @@ import {CountContext} from '../../App'
 
 export default function ComponentD() {
 
-      const newValue = useContext(CountContext)
+    //  const newValue = useContext(CountContext) -- this must be uncomment when in use
 
     return (
         <div>

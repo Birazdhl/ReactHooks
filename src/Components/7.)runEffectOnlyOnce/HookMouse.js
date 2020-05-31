@@ -18,10 +18,10 @@ export default function HookMouse() {
 
        return () => {
            console.log('Component unmounting Code')
-           window.removeEventListener('mousemove',logMousePosition)
+           window.removeEventListener('mousemove',logMousePosition) //return function is componentUnmount
        }
 
-    },[])
+    },[]) //EmptyArray determince that the component should be run only once
 
     return (
 

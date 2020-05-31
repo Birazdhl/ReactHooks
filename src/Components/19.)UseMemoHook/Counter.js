@@ -15,11 +15,11 @@ function Counter() {
        setCounterTwo(counterTwo + 1)
    }
 
-  const isEven =  useMemo( () => {
+  const isEven =   useMemo(() => {
     let i = 0 
-     while(i<2000000000) i++
+     while(i<200000000) i++
     return (counterOne % 2 === 0)
-    },[counterOne])
+    },[counterOne])  //without useMemo,,,counter two button aslo takes time
 
 
     return (
